@@ -16,13 +16,13 @@ def fib(n, memo={}):
     
     # see if we can reuse something
     if n in memo:
-        # print(memo)
         return memo[n]
     
     if n<=2:
         return 1
     
     memo[n] = fib(n-1, memo) + fib(n-2, memo)
+    print(memo)
     return memo[n]
 
-print(fib(15))
+print(fib(6))
